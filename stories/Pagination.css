@@ -1,0 +1,70 @@
+:root {
+  --clr-primary: #6366f1;
+  --clr-primary-dark: #4338ca;
+  --clr-primary-light: #a5b4fc;
+  --clr-neutral: #64748b;
+  --clr-neutral-dark: #334155;
+  --clr-neutral-light: #cbd5e1;
+  --clr-ring: #a5b4fc;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a,
+button {
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.pagination {
+  display: flex;
+}
+
+.pagination > * + * {
+  margin-left: 16px;
+}
+
+.pagination-item {
+  font-size: 20px;
+  border-radius: 16px;
+  background-color: var(--clr-neutral-light);
+  color: var(--clr-neutral-dark);
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.pagination-item:hover {
+  background-color: var(--clr-neutral);
+}
+
+.pagination-item:focus-visible {
+  box-shadow: 0 0 0 4px var(--clr-ring), 0 1px 2px 0 var(--clr-ring), 0 0 #0000;
+}
+
+[data-disabled='true'],
+[data-ui='dot'] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+[data-active='true'] {
+  background-color: var(--clr-primary);
+  color: white;
+}
+
+[data-active='true']:hover {
+  background-color: var(--clr-primary-dark);
+}
