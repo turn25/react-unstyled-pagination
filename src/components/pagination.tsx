@@ -178,7 +178,7 @@ export interface PaginationProps extends HTMLAttributes<HTMLDivElement> {
    * @param page the active page
    * @returns void
    */
-  onPageChange: (page: number) => void;
+  onPageChange?: (page: number) => void;
   /**
    * Options to change pagination items aria-label
    */
