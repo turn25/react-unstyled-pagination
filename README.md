@@ -297,7 +297,7 @@ const { activePage, range } = usePagination({
 | Parameters              | Type                     | Description                                                               |
 | :---------------------- | :----------------------- | :------------------------------------------------------------------------ |
 | `page`                  | `number`                 | **Required** Current page, start from 1 (can be controlled)               |
-| `total`                 | `number`                 | **Required**. Total pages of pagination unmounts                          |
+| `total`                 | `number`                 | **Required**. Total pages of pagination.                                  |
 | `boundaries`            | `number`                 | **Default: 1** Number of visible pages at the start and end of pagination |
 | `siblings`              | `number`                 | **Default: 1** Number of visible pages before and after the current page. |
 | `onPageChange`          | `(page: number) => void` | Callback fired when page is changed.                                      |
